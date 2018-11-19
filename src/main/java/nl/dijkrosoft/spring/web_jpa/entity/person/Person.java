@@ -1,4 +1,4 @@
-package nl.dijkrosoft.spring.web_jpa.entity;
+package nl.dijkrosoft.spring.web_jpa.entity.person;
 
 import javax.persistence.*;
 

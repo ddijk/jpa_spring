@@ -1,7 +1,7 @@
 package nl.dijkrosoft.spring.web_jpa;
 
-import nl.dijkrosoft.spring.web_jpa.entity.Person;
-import nl.dijkrosoft.spring.web_jpa.entity.PersonRepository;
+import nl.dijkrosoft.spring.web_jpa.entity.person.Person;
+import nl.dijkrosoft.spring.web_jpa.entity.person.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-public class MyRestService {
+public class PersonService {
 
     @Autowired
     PersonRepository personRepository;
