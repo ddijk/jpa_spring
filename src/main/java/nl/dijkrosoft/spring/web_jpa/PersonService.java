@@ -44,7 +44,9 @@ public class PersonService {
     @PostMapping("/person")
     public Person create(@RequestBody Person p) {
 
-        return personRepository.save(p);
+        Person person = personRepository.save(p);
+        System.out.println("new person with id : "+ person.getId());
+        return person;
     }
 
     @DeleteMapping("/person")

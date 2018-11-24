@@ -21,7 +21,17 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
+		<java.version>10</java.version>
+		<maven.compiler.source>10</maven.compiler.source>
+		<maven.compiler.target>10</maven.compiler.target>
+		<springframework.boot.version>2.0.5.RELEASE</springframework.boot.version>
+		<springframework.data.version>2.1.0.RELEASE</springframework.data.version>
+		<docker.image.prefix>stucomm</docker.image.prefix>
+		<dockerfile.contextDirectory>docker</dockerfile.contextDirectory>
+		<repository.docker>nexus.stucomm.com</repository.docker>
+		<location.artifact>docker/explorer</location.artifact>
+		<location.swagger>docker/swagger</location.swagger>
+		<immutables.version>2.7.1</immutables.version>
 	</properties>
 
 	<dependencies>
@@ -59,7 +69,16 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<release>10</release>
+				</configuration>
+			</plugin>
 		</plugins>
+
 	</build>
 
 
